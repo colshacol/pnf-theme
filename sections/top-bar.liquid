@@ -1,0 +1,89 @@
+{% schema %}
+  {
+    "name": "TopBar",
+    "class": "TopBar",
+    "tag": "div",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% assign logoUrl = "https://cdn.shopify.com/s/files/1/0435/7819/6133/t/4/assets/logo0.png" %}
+{% assign topLinks = linklists.main-menu.links %}
+{% assign topSubLinks = linklists.top-main-links.links %}
+
+<section class="main" is-column y-center>
+<div is-row y-center>
+  <div class="left" >
+    <img id="TopBar-logo" alt="logo" src="{{ logoUrl }}" />
+  </div>
+
+  <div class="right" is-column>
+    <div class="sub-links" is-row x-end>
+      {% for link in topSubLinks %}
+        {% assign url = link.url %}
+        {% assign title = link.title %}
+        <a href="{{ url }}">{{ title }}</a>
+      {% endfor %}
+    </div>
+
+    <div class="main-links" is-row x-end>
+      {% for link in topLinks %}
+        {% assign url = link.url %}
+        {% assign title = link.title %}
+        <a href="{{ url }}">{{ title }}</a>
+      {% endfor %}
+      <a href="/cart">Cart</a>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<style>
+.TopBar {
+  min-height: 124px;
+  background: var(--darkGreen100);
+}
+
+.main {
+  min-height: 124px;
+}
+
+.left {
+  flex-grow: 0;
+  margin-right: 16px;
+}
+
+#TopBar-logo {
+  max-width: 200px;
+  margin-top: 4px;
+}
+
+.right {
+  /* This makes the right side take up the remaining */
+  /* width after the left side takes its 200px. */
+  flex-grow: 1;
+}
+
+.TopBar .main-links a {
+  color: var(--white100);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.sub-links {
+  margin-bottom: 16px;
+}
+
+.sub-links a, .main-links a {
+  margin-left: 24px;
+}
+
+</style>

@@ -1,0 +1,56 @@
+{% schema %}
+  {
+    "name": "Page Header",
+    "class": "PageHeader",
+    "tag": "div",
+    "settings": [
+      {
+        "id": "headingText",
+        "type": "text",
+        "label": "Heading Text",
+        "default": "Howdy"
+      },
+      {
+        "id": "introText",
+        "type": "text",
+        "label": "Intro Text",
+        "default": "Howdy y'all."
+      },
+      {
+        "type": "checkbox",
+        "id": "showActions",
+        "label": "Show Actions?",
+        "default": false
+      }
+    ]
+  }
+{% endschema %}
+
+<section class="PageHeader-wrapper">
+    <div is-column>
+        <h1>{{section.settings.headingText}}</h1>
+        <p>{{section.settings.introText}}</h1>
+    </div>
+</section>
+
+<style>
+.PageHeader {
+    min-height: 400px;
+  background: var(--darkGreen100);
+  padding: 48px 0;
+}
+
+.PageHeader-wrapper {
+
+}
+
+.PageHeader h1 {
+    color: var(--white100);
+    margin-bottom: 8px;
+}
+
+.PageHeader p {
+    font-size: 1.8rem;
+    color: var(--white100);
+}
+</style>

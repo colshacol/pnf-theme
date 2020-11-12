@@ -1,0 +1,129 @@
+:root {
+  --section-max-width: 1200px;
+  --section-x-padding: 24px;
+}
+
+:root {
+  --black100: rgba(1, 14, 15, 1);
+  --black90: rgba(1, 14, 15, 0.9);
+  --black80: rgba(1, 14, 15, 0.8);
+  --black70: rgba(1, 14, 15, 0.7);
+  --black60: rgba(1, 14, 15, 0.6);
+  --black50: rgba(1, 14, 15, 0.5);
+  --black40: rgba(1, 14, 15, 0.4);
+  --black30: rgba(1, 14, 15, 0.3);
+  --black20: rgba(1, 14, 15, 0.2);
+  --black10: rgba(1, 14, 15, 0.1);
+  --green100: rgba(0, 147, 143, 1);
+  --green90: rgba(0, 147, 143, 0.9);
+  --green80: rgba(0, 147, 143, 0.8);
+  --green70: rgba(0, 147, 143, 0.7);
+  --green60: rgba(0, 147, 143, 0.6);
+  --green50: rgba(0, 147, 143, 0.5);
+  --green40: rgba(0, 147, 143, 0.4);
+  --green30: rgba(0, 147, 143, 0.3);
+  --green20: rgba(0, 147, 143, 0.2);
+  --green10: rgba(0, 147, 143, 0.1);
+  --swampGreen100: rgba(68, 98, 99, 1);
+  --swampGreen90: rgba(68, 98, 99, 0.9);
+  --swampGreen80: rgba(68, 98, 99, 0.8);
+  --swampGreen70: rgba(68, 98, 99, 0.7);
+  --swampGreen60: rgba(68, 98, 99, 0.6);
+  --swampGreen50: rgba(68, 98, 99, 0.5);
+  --swampGreen40: rgba(68, 98, 99, 0.4);
+  --swampGreen30: rgba(68, 98, 99, 0.3);
+  --swampGreen20: rgba(68, 98, 99, 0.2);
+  --swampGreen10: rgba(68, 98, 99, 0.1);
+  --lightGreen100: rgba(38, 174, 171, 1);
+  --lightGreen90: rgba(38, 174, 171, 0.9);
+  --lightGreen80: rgba(38, 174, 171, 0.8);
+  --lightGreen70: rgba(38, 174, 171, 0.7);
+  --lightGreen60: rgba(38, 174, 171, 0.6);
+  --lightGreen50: rgba(38, 174, 171, 0.5);
+  --lightGreen40: rgba(38, 174, 171, 0.4);
+  --lightGreen30: rgba(38, 174, 171, 0.3);
+  --lightGreen20: rgba(38, 174, 171, 0.2);
+  --lightGreen10: rgba(38, 174, 171, 0.1);
+  --darkGreen100: rgba(3, 55, 57, 1);
+  --darkGreen90: rgba(3, 55, 57, 0.9);
+  --darkGreen80: rgba(3, 55, 57, 0.8);
+  --darkGreen70: rgba(3, 55, 57, 0.7);
+  --darkGreen60: rgba(3, 55, 57, 0.6);
+  --darkGreen50: rgba(3, 55, 57, 0.5);
+  --darkGreen40: rgba(3, 55, 57, 0.4);
+  --darkGreen30: rgba(3, 55, 57, 0.3);
+  --darkGreen20: rgba(3, 55, 57, 0.2);
+  --darkGreen10: rgba(3, 55, 57, 0.1);
+  --gray100: rgba(51, 51, 51, 1);
+  --gray90: rgba(51, 51, 51, 0.9);
+  --gray80: rgba(51, 51, 51, 0.8);
+  --gray70: rgba(51, 51, 51, 0.7);
+  --gray60: rgba(51, 51, 51, 0.6);
+  --gray50: rgba(51, 51, 51, 0.5);
+  --gray40: rgba(51, 51, 51, 0.4);
+  --gray30: rgba(51, 51, 51, 0.3);
+  --gray20: rgba(51, 51, 51, 0.2);
+  --gray10: rgba(51, 51, 51, 0.1);
+  --purple100: rgba(106, 55, 146, 1);
+  --purple90: rgba(106, 55, 146, 0.9);
+  --purple80: rgba(106, 55, 146, 0.8);
+  --purple70: rgba(106, 55, 146, 0.7);
+  --purple60: rgba(106, 55, 146, 0.6);
+  --purple50: rgba(106, 55, 146, 0.5);
+  --purple40: rgba(106, 55, 146, 0.4);
+  --purple30: rgba(106, 55, 146, 0.3);
+  --purple20: rgba(106, 55, 146, 0.2);
+  --purple10: rgba(106, 55, 146, 0.1);
+  --yellow100: rgba(253, 179, 8, 1);
+  --yellow90: rgba(253, 179, 8, 0.9);
+  --yellow80: rgba(253, 179, 8, 0.8);
+  --yellow70: rgba(253, 179, 8, 0.7);
+  --yellow60: rgba(253, 179, 8, 0.6);
+  --yellow50: rgba(253, 179, 8, 0.5);
+  --yellow40: rgba(253, 179, 8, 0.4);
+  --yellow30: rgba(253, 179, 8, 0.3);
+  --yellow20: rgba(253, 179, 8, 0.2);
+  --yellow10: rgba(253, 179, 8, 0.1);
+  --red100: rgba(175, 34, 35, 1);
+  --red90: rgba(175, 34, 35, 0.9);
+  --red80: rgba(175, 34, 35, 0.8);
+  --red70: rgba(175, 34, 35, 0.7);
+  --red60: rgba(175, 34, 35, 0.6);
+  --red50: rgba(175, 34, 35, 0.5);
+  --red40: rgba(175, 34, 35, 0.4);
+  --red30: rgba(175, 34, 35, 0.3);
+  --red20: rgba(175, 34, 35, 0.2);
+  --red10: rgba(175, 34, 35, 0.1);
+  --white100: rgba(255, 255, 255, 1);
+  --white90: rgba(255, 255, 255, 0.9);
+  --white80: rgba(255, 255, 255, 0.8);
+  --white70: rgba(255, 255, 255, 0.7);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white50: rgba(255, 255, 255, 0.5);
+  --white40: rgba(255, 255, 255, 0.4);
+  --white30: rgba(255, 255, 255, 0.3);
+  --white20: rgba(255, 255, 255, 0.2);
+  --white10: rgba(255, 255, 255, 0.1);
+  --offWhite100: rgba(244, 248, 248, 1);
+  --offWhite90: rgba(244, 248, 248, 0.9);
+  --offWhite80: rgba(244, 248, 248, 0.8);
+  --offWhite70: rgba(244, 248, 248, 0.7);
+  --offWhite60: rgba(244, 248, 248, 0.6);
+  --offWhite50: rgba(244, 248, 248, 0.5);
+  --offWhite40: rgba(244, 248, 248, 0.4);
+  --offWhite30: rgba(244, 248, 248, 0.3);
+  --offWhite20: rgba(244, 248, 248, 0.2);
+  --offWhite10: rgba(244, 248, 248, 0.1);
+}
+
+[fw-500] {
+  font-weight: 500;
+}
+
+[fw-300] {
+  font-weight: 300;
+}
+
+[fw-700] {
+  font-weight: 700;
+}
