@@ -5,6 +5,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 62.5%;
+  background: #f3f9f9;
 }
 
 * {
@@ -39,6 +40,11 @@ h6 {
   font-size: 0.875rem;
 }
 
+label {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 p {
   font-size: 1.6rem;
   font-weight: 400;
@@ -51,4 +57,16 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--green100);
+}
+
+button {
+  background: var(--green100);
+  color: var(--white100);
+  border-radius: 2px;
+  padding: 9px 16px 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

@@ -18,9 +18,15 @@
       },
       {
         "type": "checkbox",
-        "id": "showActions",
-        "label": "Show Actions?",
+        "id": "showAction",
+        "label": "Show Action",
         "default": false
+      },
+      {
+        "id": "actionText",
+        "type": "text",
+        "label": "Action Text",
+        "default": "Howdy"
       }
     ]
   }
@@ -30,12 +36,17 @@
     <div is-column>
         <h1>{{section.settings.headingText}}</h1>
         <p>{{section.settings.introText}}</h1>
+        {% if section.settings.showAction %}
+        <div is-row class="actions">
+          <button>{{section.settings.actionText}}</button>
+        </div>
+        {% endif %}
     </div>
 </section>
 
 <style>
 .PageHeader {
-    min-height: 400px;
+  min-height: 200px;
   background: var(--darkGreen100);
   padding: 48px 0;
 }
@@ -47,10 +58,15 @@
 .PageHeader h1 {
     color: var(--white100);
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .PageHeader p {
     font-size: 1.8rem;
     color: var(--white100);
+}
+
+.PageHeader .actions {
+  margin-top: 32px;
 }
 </style>

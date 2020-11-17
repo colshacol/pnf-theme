@@ -1,0 +1,23 @@
+spacer-8 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+spacer-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+spacer-24 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+spacer-32 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}

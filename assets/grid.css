@@ -10,6 +10,14 @@ section {
   padding-right: max(var(--section-x-padding), var(--x-padding));
 }
 
+[do-wrap] {
+  flex-wrap: wrap;
+}
+
+[is-inline] {
+  display: inline-flex;
+}
+
 /* row */
 
 [is-row] {

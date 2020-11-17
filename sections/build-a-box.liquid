@@ -1,0 +1,35 @@
+{% schema %}
+  {
+    "name": "Build-A-Box",
+    "class": "BuildABox",
+    "tag": "div",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% assign logoUrl = "https://cdn.shopify.com/s/files/1/0435/7819/6133/t/4/assets/logo0.png" %}
+{% assign topLinks = linklists.main-menu.links %}
+{% assign topSubLinks = linklists.top-main-links.links %}
+
+<section is-column>
+<div is-row y-center class="filters">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+</div>
+</section>
+
+<style>
+.BuildABox {
+}
+
+</style>

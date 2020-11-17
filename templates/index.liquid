@@ -1,10 +1,94 @@
-{% for product in collections.frontpage.products limit:4 %}
-  <div>
-    <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
-    {{ product.price | money }}
-    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
-    <a href="{{ product.url | within: collection }}">
-      <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
-    </a>
+{% section 'page-header' %}
+{% assign allCollections = collections %}
+{% assign subscribableProducts = collections["subscribable-products"].products %}
+{% assign availableProducts = collections["available-products"].products %}
+{% assign customerData = customer %}
+{% assign cartData = cart | json %}
+{% assign url = page.url | json %}
+
+<script>
+console.log({{ subscribableProducts | json }})
+</script>
+
+<section is-column id="Index" class="main">
+  <div is-row y-center do-wrap class="filters">
+    <span is-row y-center class="filterBox"><input type="checkbox" id="bacon" name="bacon" value="Bike" checked>
+    <spacer-8></spacer-8>
+    <label for="bacon">Bacon</label>
+    <spacer-24></spacer-24></span>
+    <span is-row y-center class="filterBox"><input type="checkbox" id="sausage" name="sausage" value="Car" checked>
+    <spacer-8></spacer-8>
+    <label for="sausage">Sausage</label>
+    <spacer-24></spacer-24></span>
+    <span is-row y-center class="filterBox"><input type="checkbox" id="hotDogs" name="hotDogs" value="Boat" checked>
+    <spacer-8></spacer-8>
+    <label for="hotDogs">Hot Dogs</label>
+    <spacer-24></spacer-24></span>
+    <span is-row y-center class="filterBox"><input type="checkbox" id="ham" name="ham" value="Car" checked>
+    <spacer-8></spacer-8>
+    <label for="ham">Ham</label>
+    <spacer-24></spacer-24></span>
+    <span is-row y-center class="filterBox"><input type="checkbox" id="beefAndBison" name="beefAndBison" value="Car" checked>
+    <spacer-8></spacer-8>
+    <label for="beefAndBison">Beef & Bison</label>
+    <spacer-24></spacer-24></span>
+    <span is-row y-center class="filterBox"><input type="checkbox" id="bundles" name="bundles" value="Car" checked>
+    <spacer-8></spacer-8>
+    <label for="bundles">Bundles</label>
+    <spacer-24></spacer-24></span>
   </div>
-{% endfor %}
+
+  <div is-row class="body">
+    <div is-column class="cart">
+      <h3>Cart</h3>
+    </div>
+    <div is-row class="products" do-wrap>
+      {% for product in subscribableProducts %}
+        <div is-column is-inline class="product">
+          <h3>{{product.title}}</h3>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+#Index {
+  
+}
+
+#Index .filterBox {
+
+}
+
+#Index .filters {
+  padding: 24px 0;
+}
+
+#Index .body {
+
+}
+
+#Index .cart {
+  max-width: 320px;
+  border: 1px solid var(--black20);
+}
+
+#Index .products {
+  border: 1px solid var(--black20);
+}
+
+#Index .product {
+  max-width: 320px;
+}
+</style>
+
+<script>
+const checkboxes = Array.from(document.querySelectorAll('#Index .filters input'))
+
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', (event) => {
+    console.log({ event })
+  })
+})
+</script>
